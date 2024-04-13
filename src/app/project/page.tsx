@@ -17,23 +17,31 @@ const Project=()=>{
                </div>
                </div>
            </div>
-           <div className="flex flex-wrap md:px-40 flex-row px-2">
-  <div className="w-full  md:w-1/3  ">
+           <div className="flex flex-wrap md:px-40 flex-row px-2 ">
+  <div className="w-full md:w-1/3 p-1">
    
-    <div className="rounded-lg bg-white w-full justify-items-center  thrink-0">
+    <div className=" rounded-lg bg-white  thrink-0">
     <Image src={kevi}  alt="project" className="w-[100%] p-2 md:hover:scale-95"/>
     <p className="font-bold px-2">Web Design</p>
      <p className="text-slate-500 px-2">Web Design</p>
     </div>
      
   </div>
-  <div className="w-full md:w-1/3  px-4">
-    
-  <Image src={kevi} width="100" height='70' className="h-full w-full" alt="project"/>
+  <div className=" w-full  md:w-1/3 p-1">
+  <div className="rounded-lg bg-white w-full   thrink-0">
+  <Image src={kevi} alt="project" className="w-[100%] p-2 md:hover:scale-95"/>
+  <p className="font-bold px-2">Web Design</p>
+     <p className="text-slate-500 px-2">Web Design</p>
   </div>
-  <div className="w-full md:w-1/3  px-4">
-  <Image src={kevi} width="100" height='70' className="h-full w-full" alt="project"/>
   </div>
+  <div className=" w-full  md:w-1/3 p-1">
+  <div className="rounded-lg bg-white w-full  thrink-0 ">
+  <Image src={kevi} alt="project" className="w-[100%] p-2 md:hover:scale-95"/>
+  <p className="font-bold px-2">Web Design</p>
+     <p className="text-slate-500 px-2">Web Design</p>
+  </div>
+  </div>
+  
 
 </div>
          
