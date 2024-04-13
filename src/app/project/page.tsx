@@ -99,15 +99,12 @@ const Project=()=>{
           <Modal isOpen={showModal} className=" my-20 mr-2 md:mx-40 rounded-lg bg-white ">
           <div className="grid justify-items-end p-2">
           <button onClick={() => setShowModal(false)} className="items-end"><FaTimes/></button>
-           
           </div>
-
           <div className="grid grid-cols-2 p-2">
              <div>
                  <Image src={kevi} alt="ekazi"  className="w-full h-full p-2"/>
                 </div>
                 <div>
-
                   <p className="text-black font-semibold p-2">
                     Website Design for Marketing Agency Startup</p>
                   <p className="text-slate-500 p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
@@ -118,10 +115,8 @@ const Project=()=>{
                      </p>
                 </div>
                 </div>
-                <div>
-                   
+                <div>  
           </div>
-
           </Modal>
            </div>
        
