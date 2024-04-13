@@ -1,11 +1,12 @@
 'use client'
 import kevi from "../../../public/image/kevi.jpg";
 import Image from "next/image";
-import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleRight,FaTimes } from "react-icons/fa";
+import Modal from "react-modal";
 import { useState } from "react";
-const Project=()=>{
 
-    const [openModalForm, setModael]=useState(false);
+const Project=()=>{
+    const [showModal, setShowModal] = useState(false);
 
     const project = [
         {
@@ -46,19 +47,6 @@ const Project=()=>{
         },
       ];
 
-      const handleProject=()=>{
-
-        alert ("hello Is under design")
-
-      }
-
-      const openModal=()=>{
-
-        return(
-
-            <><p>Hello I'm Mr Modal Do you want to Open Me</p></>
-        )
-      }
 
     return (
 
@@ -90,7 +78,7 @@ const Project=()=>{
                  </div>
                 </div>
                 <div>
-                    <p className="rounded-lg  cursor-pointer flex justify-end p-2 " onClick={handleProject}>
+                    <p className="rounded-lg  cursor-pointer flex justify-end p-2 " onClick={() => setShowModal(true)}>
                          <FaArrowAltCircleRight height="60" width="90"/>
                     </p>
                 </div>
@@ -106,8 +94,37 @@ const Project=()=>{
              
            ))}
           </div>
-         
-        </div>
+        
+
+          <Modal isOpen={showModal} className=" my-20 mr-2 md:mx-40 rounded-lg bg-white ">
+          <div className="grid justify-items-end p-2">
+          <button onClick={() => setShowModal(false)} className="items-end"><FaTimes/></button>
+           
+          </div>
+
+          <div className="grid grid-cols-2 p-2">
+             <div>
+                 <Image src={kevi} alt="ekazi"  className="w-full h-full p-2"/>
+                </div>
+                <div>
+
+                  <p className="text-black font-semibold p-2">
+                    Website Design for Marketing Agency Startup</p>
+                  <p className="text-slate-500 p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                     ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                     deserunt mollit anim id est laborum.
+                     </p>
+                </div>
+                </div>
+                <div>
+                   
+          </div>
+
+          </Modal>
+           </div>
+       
     )
 
 
