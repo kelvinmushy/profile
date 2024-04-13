@@ -47,8 +47,27 @@ const Home=()=>{
                  cursor-pointer md:w-80 md:h-70 rounded-lg  "/> */}
                 </div>
 
-
           </div>
+           <div className="md:flex md:flex-row md:px-40 ">
+                  <div className="md:w-1/2  flex py-10">
+                  <Image src={kevi}  alt="kelvin cosmas" className="w-[100%] h-50 md:w-80 ms:h-70  rounded-lg md:hover:scale-125  transition-all duration-500"  />
+                  </div>
+                
+                  <div className="thrink-0">
+                  <div className="md:w-1/2 flex flex-row">
+                      <div  className="h-10 text-white rounded-lg bg-[#042D54] p-2  font-semibold uppercase"> 
+                      <p>About Me</p>
+                      </div>
+                     
+                     <div className="capitalize">
+                      <p>I AM AVAILABLE FOR UI UX DESIGN PROJECTS</p>
+                     </div>
+
+
+                  </div>
+                  </div>
+
+                </div>
       </>
 
          

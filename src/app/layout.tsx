@@ -19,14 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#041D34]">
-
-       <div>
          <Nav/>
-       </div>
+     
 
-       <div>
+       
        {children}
-       </div>
+      
         
         </body>
     </html>
